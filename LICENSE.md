@@ -1,4 +1,5 @@
 ## 📄 License
+---
 
 Copyright © 2026 Aditya . All Rights Reserved.
 
