@@ -1,0 +1,430 @@
+// {
+//     "files.autoSave": "afterDelay",
+//     "workbench.commandPalette.history": 50000,
+//     "workbench.activityBar.autoHide": true,
+//     "workbench.colorTheme": "JellyFish"
+
+// }
+// ​Extensions to Install
+// To fully support this configuration (especially your Python, Jupyter, C++, and UI configurations), install these
+// extensions in VS Code:
+// Python & Data Science Ecosystem (Jupyter):
+// Python (by Microsoft) - Core Python language support.
+// Pylance (by Microsoft) - Deep intellisense and typing support for Python.
+// Jupyter (by Microsoft) - Core notebook editing extension.
+// Jupyter Keymap (by Microsoft) - Gives you the standard Jupyter keyboard shortcuts.
+// Jupyter Notebook Renderers (by Microsoft) - Necessary for rendering graphs (Matplotlib, SVG, PNG outputs).
+// Web Development & Javascript (shadcn/ui & general):
+// Prettier - Code formatter (esbenp.prettier-vscode)
+// Live Server (ritwickdey.LiveServer)
+// Quokka.js (WallabyJs.quokka-vscode) - For your live JS/TS scratchpad.
+// Console Ninja (WallabyJs.console-ninja) - Tied directly to your "console-ninja.featureSet" setting.
+// C/C++ Ecosystem:
+// C/C++ (ms-vscode.cpptools by Microsoft) - Required for C_Cpp.intelliSenseUpdateDelay.
+// Utility & Theming:
+// JellyFish Theme (jessica.jellyfish-theme) - Your primary color theme.
+// vscode-icons (vscode-icons-team.vscode-icons) - Your active file icon set.
+// Code Runner (formulahendry.code-runner) - Handles your integrated terminal execute commands.
+// GitLens (eamodio.gitlens) - Powers your Git tracking and the AI model integration.
+// Database Client (cweijan.vscode-database-client2) - For your DB auto-sync setting.
+// Excel Viewer (GrapeCity.gc-excelviewer) - Handles your .xlsx associations.
+// Note on Nerd Fonts for Ubuntu:
+// Setting the font in VS Code to "RobotoMono Nerd Font" requires it to be physically installed on your OS. If you
+// haven't downloaded it yet, you can pull it directly from the Nerd Fonts Releases page. Extract the .ttf files into
+// ~/.local/share/fonts/, and then run fc-cache -fv in your terminal to apply them to Ubuntu.
+{
+  "gitlens.changes.locations": ["gutter", "line", "overview"],
+  "scm.providers.enabled": false,
+  "git.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.wait": 10,
+  "debug.javascript.autoAttachFilter": "always",
+  "gitlens.advanced.messages": {
+    "suppressGitDisabledWarning": true,
+    "suppressGitMissingWarning": true,
+  },
+  /*
+✅ Auto-save settings */
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 50,
+  // for C & C++ //
+  "files.associations": {
+    "*.cpp": "cpp",
+    "*.c": "c",
+  },
+  // for suggestions //
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on",
+  },
+  "editor.suggest.showIssues": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showModules": true,
+  "editor.suggest.showEnums": true,
+  "editor.suggest.showOperators": true,
+  "editor.suggest.showStructs": true,
+  "editor.suggest.showVariables": true,
+  "editor.suggest.showWords": true,
+  "editor.suggest.showKeywords": true,
+  "editor.suggest.showReferences": true,
+  "editor.suggest.showTypeParameters": true,
+  "editor.suggest.showInterfaces": true,
+  "editor.suggest.showColors": true,
+  "editor.suggest.showCustomcolors": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.parameterHints.enabled": true,
+  "editor.wordBasedSuggestions": "currentDocument",
+  "editor.colorDecorators": true,
+  /*
+✅ Global Editor Font Configuration */
+  "editor.fontFamily": "\"RobotoMono Nerd Font\", \"Roboto Mono\", monospace",
+  /*
+✅ Format code automatically with Prettier on save */
+  "editor.formatOnSave": true,
+  "editor.autoSaveDelay": "100",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Enable auto closing brackets & quote //
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always", // for cursor (performance) //
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+  /*
+✅ Live Server settings */
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.useLocalIp": true,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.host": "127.0.0.1",
+  /*
+✅ Performance optimizations */
+  "editor.hover.hidingDelay": 30,
+  "editor.hover.delay": 30,
+  "editor.occurrencesHighlightDelay": 25,
+  "workbench.hover.delay": 50,
+  "C_Cpp.codeAnalysis.updateDelay": 20,
+  "C_Cpp.intelliSenseUpdateDelay": 500,
+  /*
+✅ Notebook & icon theme settings */
+  "notebook.formatOnSave.enabled": true,
+  "workbench.iconTheme": "vscode-icons",
+  "window.titleBarStyle": "custom",
+  /*
+✅ General editor colors */
+  "workbench.colorCustomizations": {
+    "editor.foreground": "#ffffff",
+    "editor.background": "#000000",
+    "editorBracketMatch.border": "#ffff00",
+    "editorBracketHighlight.foreground1": "#ffff00",
+    "editorBracketHighlight.fontstyle": "bold",
+    "editorBracketHighlight.foreground2": "#00ffff",
+    "editorBracketHighlight.foreground3": "#14a1ff",
+    "editorBracketHighlight.foreground4": "#ffff00",
+    "editorBracketHighlight.foreground5": "#fb00ff",
+    "editorBracketHighlight.foreground6": "#ffff00",
+    "editorBracketMatch.background": "#bfda1116",
+    "editor.selectionBackground": "#1e00ffd0",
+    "editor.selectionForeground": "#000000",
+    "editorSuggestWidget.background": "#000000",
+    "editorCursor.foreground": "#ffffff",
+    "editorCursor.background": "#000000",
+    "editorIndentGuide.background1": "#ffffff58",
+    "editorIndentGuide.activeBackground1": "#00ff00",
+    "scrollbar.shadow": "#ffffff",
+    "scrollbarSlider.background": "#3f04ff",
+    "scrollbarSlider.hoverBackground": "#f801f09a",
+    "scrollbarSlider.activeBackground": "#00ff51dd",
+    "activityBar.background": "#070b1d",
+    "statusBar.background": "#070b1d",
+    "statusBarItem.hoverBackground": "#041b82",
+    "statusBarItem.hoverForeground": "#ffffff",
+    "statusBar.foreground": "#ffffffe9",
+    "titleBar.activeBackground": "#070b1d",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.border": "#000fff",
+    "titleBar.inactiveBackground": "#070b1d",
+    "toolbar.hoverBackground": "#0f2cea78",
+    "toolbar.hoverOutline": "#00ff00",
+    "tab.activeBorder": "#ffff00",
+    "tab.activeBackground": "#000000",
+    "tab.activeForeground": "#ffff00",
+    "tab.activeBorderTop": "#ffff00",
+    "tab.hoverBackground": "#ffffff22",
+    "tab.hoverForeground": "#00ff00",
+    "tab.border": "#aaff0000",
+    "tab.inactiveBackground": "#070b1d",
+    "tab.inactiveForeground": "#ffffff",
+    "menubar.selectionBorder": "#ffffff",
+    "menubar.selectionBackground": "#0000ff",
+    "menubar.selectionForeground": "#ffffff",
+    "editor.lineHighlightBorder": "#0000ff",
+    "editor.lineHighlightBackground": "#070b1d",
+    "editor.selectionHighlightBackground": "#00000055",
+    "editor.inactiveSelectionBackground": "#05c6dc2d",
+    "editor.wordHighlightBackground": "#68686809",
+    "editor.wordHighlightStrongBackground": "#00fe0443",
+    "notebook.focusedCellBorder": "#2AFFA5",
+    "notebook.selectedCellBorder": "#3FC5FF",
+    "notebook.runningCellBorder": "#FFC857",
+    "notebook.runningCellBackground": "#FFC85718",
+    "notebook.selectedCellBackground": "#2AFFA518",
+    "notebook.outputContainerBackgroundColor": "#006f434e",
+    "notebook.outputContainerBorderColor": "#03fd41",
+  },
+  /*
+✅ Syntax highlighting customizations */ "editor.tokenColorCustomizations": {
+    "[JellyFish]": {
+      "textMateRules": [
+        {
+          "scope": "meta.structure.dictionary.json entity.name.key.json",
+          "settings": { "foreground": "#ff0088" },
+        },
+        {
+          "scope": ["entity.name.tag.html", "meta.tag.html"],
+          "settings": { "foreground": "#ff0080", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": ["keyword.operator", "punctuation.separator"],
+          "settings": { "foreground": "#15ff00", "fontStyle": "bold" },
+        },
+        {
+          "scope": "selection",
+          "settings": { "foreground": "#ffffff83" },
+        },
+        {
+          "scope": "storage.type",
+          "settings": { "foreground": "#3939ff", "fontStyle": "bold" },
+        },
+        {
+          "scope": [
+            "comment",
+            "comment.block",
+            "comment.block.documentation",
+            "comment.line",
+            "punctuation.definition.comment",
+          ],
+          "settings": { "foreground": "#878707c1", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": "variable",
+          "settings": { "foreground": "#ff00ff", "fontStyle": "italic" },
+        },
+        {
+          "scope": "variable.other.readwrite.js",
+          "settings": { "foreground": "#ff00ff", "fontStyle": "italic" },
+        },
+        {
+          "scope": "keyword.control.python",
+          "settings": { "foreground": "#2b00ff", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": "storage.type.python",
+          "settings": { "foreground": "#2b00ff", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": ["variable.other.property", "variable.other.object"],
+          "settings": { "foreground": "#4af59a", "fontStyle": "italic" },
+        },
+        {
+          "scope": "keyword",
+          "settings": { "foreground": "#ff1493", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": "entity.name.function",
+          "settings": { "foreground": "#ff1493", "fontStyle": "italic" },
+        },
+        {
+          "scope": "constant.numeric",
+          "settings": { "foreground": "#00ffff" },
+        },
+        {
+          "scope": [
+            "keyword.other.unit.px.css",
+            "keyword.other.unit.em.css",
+            "keyword.other.unit.vw.css",
+            "keyword.other.unit.vh.css",
+            "keyword.other.unit.percent.css",
+            "keyword.other.unit.rem.css",
+          ],
+          "settings": { "foreground": "#bbff00" },
+        },
+        {
+          "scope": "entity.name.tag.css",
+          "settings": { "foreground": "#00ffff", "fontStyle": "bold" },
+        },
+        {
+          "scope": [
+            "meta.object-literal.key",
+            "meta.structure.dictionary.json.key",
+            "string.quoted.double.json",
+            "support.type.property-name.json",
+          ],
+          "settings": { "foreground": "#ffff00", "fontStyle": "bold" },
+        },
+        {
+          "scope": [
+            "punctuation.section.braces",
+            "punctuation.section.parens",
+            "punctuation.section.brackets",
+            "meta.brace.curly",
+            "meta.brace.round",
+          ],
+          "settings": { "foreground": "#ffffff", "fontStyle": "bold" },
+        },
+        {
+          "scope": [
+            "string.quoted.double",
+            "string.quoted.single",
+            "string.template",
+          ],
+          "settings": { "foreground": "#ffff00" },
+        },
+        {
+          "scope": [
+            "support.type.property-name.css",
+            "support.constant.property-value.css",
+            "keyword.control.at-rule.css",
+          ],
+          "settings": { "foreground": "#ff0080", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": ["support.constant.property-value.css"],
+          "settings": { "foreground": "#00ff00", "fontStyle": "italic" },
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name.class.css",
+            "entity.other.attribute-name.id.elements.css",
+          ],
+          "settings": { "foreground": "#ffffff", "fontStyle": "italic bold" },
+        },
+        {
+          "scope": "keyword.control.at-rule.css",
+          "settings": { "foreground": "#ffd700", "fontStyle": "bold" },
+        },
+        {
+          "scope": "keyword.control.at-rule.keyframes.css",
+          "settings": { "foreground": "#FFD700", "fontStyle": "bold" },
+        },
+      ],
+    },
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.showRunIconInEditorTitleMenu": true,
+  // quokka extension //
+  "quokka.autoStart": true,
+  "quokka.autoStartFor": ["javascript", "typescript"],
+  "quokka.pro": false,
+  "quokka.fileType": {
+    "javascript": "babel",
+  },
+  "quokka.autoClearConsole": true,
+  "quokka.babel": {
+    "presets": ["@babel/presets-env"],
+  },
+  "console-ninja.featureSet": "Community",
+  "workbench.editor.empty.hint": "hidden",
+  "[c]": {},
+  /*
+✅ Terminal setup for Ubuntu (Zsh focus) */
+  "workbench.commandPalette.history": 5000000,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.profiles.linux": {
+    "zsh": { "path": "zsh", "icon": "terminal-ubuntu" },
+    "bash": { "path": "bash", "icon": "terminal-bash" },
+  },
+  "editor.pasteAs.preferences": [],
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.editorAssociations": {
+    "*.exe": "default",
+    "*.glb": "default",
+    "*.xlsx": "gc-excelviewer-excel-editor",
+    "*.ipynb": "jupyter-notebook",
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  //------------cursor line and blinking in terminal ----------//
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorWidth": 2,
+  "editor.autoClosingComments": "always",
+  "quokka.codeAutoPlayDelay": 100,
+  /*
+✅ Terminal Font Configuration */
+  "terminal.integrated.fontFamily": "\"RobotoMono Nerd Font\", \"Roboto Mono\", monospace",
+  "mdb.mcp.server": "prompt",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+  "database-client.autoSync": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "jupyter.askForKernelRestart": false,
+  //------------------------------------- JUPYTER NOTEBOOK EDITOR OPTIONS -----------------//
+  "python.terminal.activateEnvironment": true,
+  "jupyter.defaultKernal": "python",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "notebook.lineNumbers": "on",
+  /* ==================================================
+NOTEBOOK EDITOR OPTIONS (JELLYFISH · ML · PRO)
+================================================== */
+  "notebook.editorOptionsCustomizations": {
+    "editor.fontFamily": "\"RobotoMono Nerd Font\", \"Roboto Mono\", monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 22,
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "on",
+    "editor.renderLineHighlight": "all",
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "off",
+    "editor.scrollBeyondLastLine": false,
+  },
+  /* ==================================================
+NOTEBOOK UI + PERFORMANCE
+================================================== */
+  "jupyter.useNotebookEditor": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right",
+  },
+  "notebook.compactView": true,
+  "notebook.output.scrolling": true,
+  "notebook.output.wordWrap": true,
+  "notebook.output.textLineLimit": 50000,
+  "notebook.output.autoReveal": false,
+  "notebook.experimental.fastScroll": true,
+  "notebook.consolidatedRunButton": true,
+  /* ==================================================
+JUPYTER / ML OPTIMIZATION
+================================================== */
+  "jupyter.enablePlotViewer": true,
+  "jupyter.themeMatplotlibPlots": true,
+  "jupyter.outputMimeTypes": [
+    "text/plain",
+    "text/html",
+    "image/svg+xml",
+    "image/png",
+  ],
+  /* ==================================================
+PYTHON PERFORMANCE
+================================================== */
+  "jupyter.defaultKernel": "python3",
+  "python.analysis.indexing": false,
+  "python.analysis.autoImportCompletions": true,
+  /*
+✅ Standa
+rdized Ubuntu Python Path */
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.createEnvironment.trigger": "off",
+  "chat.viewSessions.orientation": "stacked",
+  "update.enableWindowsBackgroundUpdates": false,
+  "workbench.startupEditor": "none",
+  "hediet.vscode-drawio.resizeImages": null,
+  "claudeCode.preferredLocation": "panel",
+  "workbench.colorTheme": "JellyFish",
+}
+
