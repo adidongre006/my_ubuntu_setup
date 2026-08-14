@@ -16,6 +16,7 @@ A centralized collection of configuration files, setup guides, and dependencies 
 | `requirements_conda.txt` | Python dependencies required for Data Science, Machine Learning, Deep Learning, LLM, Computer Vision, and Jupyter workflows |
 | `ubuntu_zshrc_setup.txt` | Zsh installation and `.zshrc` configuration, including shell customization, aliases, plugins, and terminal setup |
 | `vscode_setup_ubuntu.txt` | VS Code installation and configuration for Python, Jupyter, Git, extensions, and general development |
+| `Auto Mount Ubuntu partition.md` | Auto mount the newly created partition in ubuntu  |
 
 ## Repository Structure
 
@@ -28,3 +29,4 @@ my_ubuntu_setup/
 ├── requirements_conda.txt
 ├── ubuntu_zshrc_setup.txt
 └── vscode_setup_ubuntu.txt
+└── Auto_Mount_Ubuntu_partition.md
