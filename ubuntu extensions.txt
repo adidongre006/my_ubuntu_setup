@@ -1,0 +1,19 @@
+ubuntu-extensions: extensions 
+
+1. active app indicator -- morhenac
+
+2. blur my shell -- auntex
+
+3. clipboard indicator -- tudmotu.com
+
+4.gnome fuzzy search -- .czarlie.gitlab.com
+
+5. just perfection -- just perfection 
+
+6. tiling shell -- ferraridimenico.com
+
+7. user theme -- gcampax.github.com
+
+8. vitals -- corecoding.com
+
+
