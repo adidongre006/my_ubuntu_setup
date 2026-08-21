@@ -17,6 +17,7 @@ A centralized collection of configuration files, setup guides, and dependencies 
 | `ubuntu_zshrc_setup.txt` | Zsh installation and `.zshrc` configuration, including shell customization, aliases, plugins, and terminal setup |
 | `vscode_setup_ubuntu.txt` | VS Code installation and configuration for Python, Jupyter, Git, extensions, and general development |
 | `Auto Mount Ubuntu partition.md` | Auto mount the newly created partition in ubuntu  |
+| `Ubuntu extension.txt` | gnome shell extensions for extension manager  |
 
 ## Repository Structure
 
@@ -30,3 +31,6 @@ my_ubuntu_setup/
 ├── ubuntu_zshrc_setup.txt
 └── vscode_setup_ubuntu.txt
 └── Auto_Mount_Ubuntu_partition.md
+└── ubuntu extensions .txt
+
+```
